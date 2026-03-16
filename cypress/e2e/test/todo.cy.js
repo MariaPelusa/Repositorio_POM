@@ -46,10 +46,9 @@ describe('Gestión de tareas con POM', () => {
     const taskActive1 = 'Tarea activa 1';
     const taskActive2 = 'Tarea activa 2';
     const taskCompleted = 'Tarea completada';
+    const taskNames = [taskActive1, taskActive2, taskCompleted];
 
-    todoPage.addTodo(taskActive1);
-    todoPage.addTodo(taskActive2);
-    todoPage.addTodo(taskCompleted);
+    todoPage.addTodos(taskNames);
     todoPage.checkTodo(taskCompleted);
 
     todoPage.filtroAll();
